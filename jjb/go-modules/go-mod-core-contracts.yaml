@@ -15,5 +15,5 @@
     jobs:
     - '{project-name}-{stream}-verify-go':
           status-context: '{project-name}-{stream}-verify'
-    - '{project-name}-{stream}-verify-go-arm':
-          status-context: '{project-name}-{stream}-verify-arm'
+    - '{project-name}-{stream}-verify-go-arm64':
+          status-context: '{project-name}-{stream}-verify-arm64'

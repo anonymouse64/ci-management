@@ -26,16 +26,16 @@
       - '{project-name}-{stream}-merge-docker'
       - '{project-name}-github-maven-jobs'
       - '{project-name}-{stream}-release-version-docker-daily-no-sonar'
-      - '{project-name}-{stream}-verify-docker-arm':
+      - '{project-name}-{stream}-verify-docker-arm64':
           build-node: ubuntu18.04-docker-arm64-4c-2g
           docker_build_args: '-f docker-files/Dockerfile.aarch64'
           docker_name: docker-support-rulesengine-arm64
-          status-context: '{project-name}-{stream}-Docker-Verify-ARM'
-      - '{project-name}-{stream}-merge-docker-arm':
+          status-context: '{project-name}-{stream}-Docker-Verify-ARM64'
+      - '{project-name}-{stream}-merge-docker-arm64':
           build-node: ubuntu18.04-docker-arm64-4c-2g
           docker_build_args: '-f docker-files/Dockerfile.aarch64'
           docker_name: docker-support-rulesengine-arm64
-      - '{project-name}-{stream}-release-version-docker-arm-daily-no-sonar':
+      - '{project-name}-{stream}-release-version-docker-arm64-daily-no-sonar':
           build-node: ubuntu18.04-docker-arm64-4c-2g
           docker_build_args: '-f docker-files/Dockerfile.aarch64'
           docker_name: docker-support-rulesengine-arm64

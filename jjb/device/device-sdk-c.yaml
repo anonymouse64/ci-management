@@ -19,9 +19,9 @@
     jobs:
       - '{project-name}-{stream}-verify-docker'
       - '{project-name}-{stream}-merge-docker'
-      - '{project-name}-{stream}-verify-docker-arm':
+      - '{project-name}-{stream}-verify-docker-arm64':
           build-node: ubuntu18.04-docker-arm64-4c-2g
           docker_name: docker-device-sdk-c-arm64
-      - '{project-name}-{stream}-merge-docker-arm':
+      - '{project-name}-{stream}-merge-docker-arm64':
           build-node: ubuntu18.04-docker-arm64-4c-2g
           docker_name: docker-device-sdk-c-arm64

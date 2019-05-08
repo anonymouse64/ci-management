@@ -251,7 +251,7 @@
           jobs: '{project-name}-maven-stage-{stream}'
 
 - job-template:
-    name: '{project-name}-{stream}-merge-docker-arm'
+    name: '{project-name}-{stream}-merge-docker-arm64'
     # Job template for Docker merge jobs
     #
     # The purpose of this job template is to run a docker build, and potentially
@@ -297,7 +297,7 @@
           cron: ''
 
 - job-template:
-    name: '{project-name}-{stream}-verify-docker-arm'
+    name: '{project-name}-{stream}-verify-docker-arm64'
     # Job template for Docker verify jobs
     #
     # The purpose of this job template is to run a docker build, and potentially
@@ -339,7 +339,7 @@
       - shell: '{post_build_script}'
 
 - job-template:
-    name: '{project-name}-{stream}-release-version-docker-arm-daily-no-sonar'
+    name: '{project-name}-{stream}-release-version-docker-arm64-daily-no-sonar'
     # Job template for Docker daily release jobs
     #
     # The purpose of this job template is to run "docker build and docker push"

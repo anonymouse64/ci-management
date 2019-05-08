@@ -18,13 +18,13 @@
     jobs:
       - '{project-name}-{stream}-verify-go':
           status-context: '{project-name}-{stream}-verify'
-      - '{project-name}-{stream}-verify-go-arm':
-          status-context: '{project-name}-{stream}-verify-arm'
+      - '{project-name}-{stream}-verify-go-arm64':
+          status-context: '{project-name}-{stream}-verify-arm64'
       - '{project-name}-{stream}-merge-go':
           post_build_script: !include-raw-escape: shell/edgexfoundry-device-virtual-go-docker-push.sh
-      - '{project-name}-{stream}-merge-go-arm':
+      - '{project-name}-{stream}-merge-go-arm64':
           post_build_script: !include-raw-escape: shell/edgexfoundry-device-virtual-go-docker-push.sh
       - '{project-name}-{stream}-stage-go':
           post_build_script: !include-raw-escape: shell/edgexfoundry-device-virtual-go-docker-push.sh
-      - '{project-name}-{stream}-stage-go-arm':
+      - '{project-name}-{stream}-stage-go-arm64':
           post_build_script: !include-raw-escape: shell/edgexfoundry-device-virtual-go-docker-push.sh

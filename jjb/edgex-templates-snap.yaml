@@ -159,7 +159,7 @@
       - edgex-provide-docker-cleanup
 
 - job-template:
-    name: '{project-name}-{stream}-verify-snap-arm'
+    name: '{project-name}-{stream}-verify-snap-arm64'
 
     # Job template for Snap verify jobs
     #
@@ -198,7 +198,7 @@
       - edgex-provide-docker-cleanup
 
 - job-template:
-    name: '{project-name}-{stream}-merge-snap-arm'
+    name: '{project-name}-{stream}-merge-snap-arm64'
 
     # Job template for Snap jobs
     #
@@ -236,7 +236,7 @@
       - edgex-provide-docker-cleanup
 
 - job-template:
-    name: '{project-name}-{stream}-stage-snap-arm'
+    name: '{project-name}-{stream}-stage-snap-arm64'
 
     # Job template for Snap merge jobs
     #
@@ -304,7 +304,7 @@
       - edgex-provide-docker-cleanup
 
 - job-template:
-    name: '{project-name}-{stream}-release-snap-arm'
+    name: '{project-name}-{stream}-release-snap-arm64'
 
     # Job template for Snap merge jobs
     #
